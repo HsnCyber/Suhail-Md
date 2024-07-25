@@ -91,7 +91,7 @@ module.exports = {
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
 
 
-  WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "public",
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "private",
   LANG: ( process.env.THEME ||  "SUHAIL"  ).toUpperCase(),
 
 
@@ -99,8 +99,8 @@ module.exports = {
 };
 
 
-
-global.ELEVENLAB_API_KEY = process.env.ELEVENLAB_API_KEY || "";
+global.ELEVENLAB_API_KEY = process.env.ELEVENLAB_API_KEY
+ || "";
 global.aitts_Voice_Id = process.env.AITTS_ID|| "37";
 
 
